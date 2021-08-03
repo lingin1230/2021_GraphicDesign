@@ -1,0 +1,281 @@
+
+body {
+
+    /* font-family: 'Encode Sans SC', sans-serif !important; */
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+
+/* -------------------- Header 區域 -------------------- */
+
+#header {
+    padding-top: 30px;
+    position: fixed;
+    z-index: 100;
+    left: 10%;
+    transition: .5s;
+}
+#header.active {
+    left: 20px;
+}
+#header #header-title {
+    writing-mode: vertical-lr;
+    font-size: 30px;
+    letter-spacing: 8px;
+    font-weight: 400;
+    transition: .5s;
+    height: 500px;
+    color: #707070;
+}
+#header-title.active {
+    opacity: 0;
+    margin-top: -525px;
+}
+#header #nav {
+    margin-top: 30px;
+    transition: .5s;
+}
+#header #nav ul {
+    list-style: none;
+    padding: 0;
+}
+#header #nav ul li {
+    padding-top: 10px;
+    font-size: 13px;
+}
+#header #nav ul a {
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+}
+#header #nav ul a:hover {
+    margin-left: -20px;
+}
+#header #nav #up {
+    transition: .3s;
+    opacity: 1;
+}
+#header #nav #up.hide {
+    opacity: 0;
+}
+/* -------------------- Main Cover 區域 -------------------- */
+
+#main-cover {
+    width: 100%;
+    height: 800px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+#main-cover img {
+    width: 300px;
+}
+    @media screen and (max-width:768px) {
+        #main-cover img {
+            width: 200px;
+        }
+    }
+
+/* -------------------- Work 區域 -------------------- */
+
+#work-area .title {
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 120px;
+}
+    @media screen and (max-width:768px) {
+        #work-area .title {
+            font-size: 80px;
+        }
+    }
+#work-area .container {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#work-area .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    opacity: .5;
+    padding: 50px;
+    transition: .3s;
+}
+#work-area .owl-carousel .owl-stage-outer .owl-stage .owl-item.center {
+    opacity: 1;
+    padding: 0px;
+    transition: .3s;
+}
+#work-area .owl-carousel .owl-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30%;
+}
+#work-area .owl-carousel .owl-nav .owl-prev, #work-area .owl-carousel .owl-nav .owl-next  {
+    font-size: 50px;
+    background: none !important;
+    transition: .3s;
+}
+#work-area .owl-carousel .owl-nav .owl-prev, #work-area .owl-carousel .owl-nav .owl-next :hover{
+    color: #000;
+}
+
+#work-area .sub-title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+@media screen and (max-width:768px) { 
+    #work-area .sub-title {
+        font-size: 22px;
+    }
+}
+
+/* ---------- Poster ---------- */
+
+#poster {
+    width: 100%;
+    background-color: #EEE;
+}
+#poster .title {
+    color: #FFF;
+}
+
+/* ---------- Project ---------- */
+#project {
+    width: 100%;
+    background-color: #FFF;
+}
+#project .title {
+    color: #EEE;
+}
+#project .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#project .container img {
+    width: 70%;
+}
+#project .container img:first-of-type{
+    width: 80%;
+}
+    @media screen and (max-width:992px) { 
+        #project .container img {
+            width: 85%;
+        }
+        #project .container img:first-of-type{
+            width: 90%;
+        }
+    }
+
+#project .sub-title:first-child {
+    margin-top: 0px;
+}
+
+/* ---------- Graduation ---------- */
+#graduation {
+    width: 100%;
+    background-color: #EEE;
+}
+#graduation .title {
+    color: #FFF;
+    font-size: 80px;
+}
+    @media screen and (max-width:768px) {
+        #graduation .title {
+            font-size: 50px;
+        }
+    }
+#graduation .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#graduation .sub-title:first-child {
+    margin-top: 0px;
+}
+#graduation .img-1{
+    width: 80%;
+}
+    @media screen and (max-width:992px) { 
+        #graduation .img-1{
+            width: 90%;
+        }
+    }
+/* ---------- Banner ---------- */
+#banner {
+    width: 100%;
+    background-color: #FFF;
+}
+#banner .title {
+    color: #EEE;
+}
+#banner .sub-title:first-child {
+    margin-top: 0px;
+}
+#banner .apps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#banner .apps img {
+    width: 70%;
+}
+    @media screen and (max-width:992px) { 
+        #banner .apps img {
+            width: 90%;
+        }
+    }
+
+/* ---------- Wall Painting ---------- */
+#wall-painting {
+    width: 100%;
+    background-color: #EEE;
+}
+#wall-painting .title {
+    color: #FFF;
+    font-size: 90px;
+}
+    @media screen and (max-width:768px) {
+        #wall-painting .title {
+            font-size: 50px;
+        }
+    }
+#wall-painting .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wall-painting .container img {
+    width: 70%;
+}
+#wall-painting .sub-title:first-child {
+    margin-top: 0px;
+}
+    @media screen and (max-width:992px) { 
+        #wall-painting .container img {
+            width: 90%;
+        }
+    }
+/* -------------------- Footer 區域 -------------------- */
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    color: #AAA;
+    background-color: #EEE;
+}
